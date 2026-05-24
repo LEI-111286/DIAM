@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../contexts/UserContext';
-import { createProduct } from '../services/api';
+import { createProduct, getCategories } from '../services/api';
 import './AuthPages.css'; // Reutiliza os estilos dos formulários
 
 export default function AddProductPage() {
@@ -13,6 +13,19 @@ export default function AddProductPage() {
     });
     const [image, setImage] = useState(null);
     const [error, setError] = useState('');
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                const res = await getCategories();
+                setCategories(res.data);
+            } catch (err) {
+                console.error('Erro ao carregar categorias', err);
+            }
+        };
+        fetchCategories();
+    }, []);
 
     if (!user || !user.is_staff) {
         navigate('/');
@@ -41,7 +54,9 @@ export default function AddProductPage() {
             navigate('/');
         } catch (err) {
             console.error(err);
-            setError('Erro ao criar produto.');
+            const dataError = err.response?.data;
+            const errorMsg = dataError?.error || dataError?.detail || (typeof dataError === 'object' ? Object.values(dataError).flat().join(' | ') : 'Erro ao criar produto.');
+            setError(errorMsg);
         }
     };
 
@@ -49,6 +64,7 @@ export default function AddProductPage() {
         <div className="auth-container">
             <div className="auth-card">
                 <h2>Adicionar Nova Leguminosa</h2>
+                {error && <p className="error-message" style={{ color: 'red', textAlign: 'center', marginBottom: '1rem' }}>{error}</p>}
                 <form onSubmit={handleSubmit} className="auth-form">
                     <div className="form-group">
                         <label>Nome</label>
@@ -69,6 +85,16 @@ export default function AddProductPage() {
                             <label>Stock</label>
                             <input type="number" required value={formData.stock} onChange={e => setFormData({ ...formData, stock: e.target.value })} />
                         </div>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Categoria</label>
+                        <select required value={formData.category} onChange={e => setFormData({ ...formData, category: e.target.value })}>
+                            <option value="">Selecione uma categoria</option>
+                            {categories.map(cat => (
+                                <option key={cat.id} value={cat.id}>{cat.name}</option>
+                            ))}
+                        </select>
                     </div>
 
                     <div className="form-group">

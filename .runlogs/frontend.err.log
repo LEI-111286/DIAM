@@ -22,3 +22,251 @@ onloadend@http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091
 settle@http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
 onloadend@http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
 
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+[39m
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+      at transformWithOxc (file:///C:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/node_modules/vite/dist/node/chunks/node.js:3338:19)
+      at TransformPluginContext.transform (file:///C:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/node_modules/vite/dist/node/chunks/node.js:3409:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/node_modules/vite/dist/node/chunks/node.js:30273:51)
+      at async loadAndTransform (file:///C:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/node_modules/vite/dist/node/chunks/node.js:24532:26)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mDuplicated export 'createProduct'
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/services/api.js:24:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m24 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m([0m[38;5;249m'[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mh[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249ms[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mT[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m:[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mm[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mp[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249m-[0m[38;5;249md[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m'[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── Export has already been declared here
+ [38;5;240m   │[0m 
+ [38;5;246m28 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0mcreateProduct[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mm[0m[38;5;249mD[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m              ──────┬──────  
+ [38;5;240m   │[0m                    ╰──────── It cannot be redeclared here
+[38;5;246m────╯[0m
+
+  Plugin: [35mvite:oxc[39m
+  File: [36mC:/Users/hened/Documents/DIAM/Projeto/ProjetoBatata/frontend/src/services/api.js[39m
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/contexts/UserContext.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/ProductDetailPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/AddProductPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/BlogPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/BlogDetailPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/CheckoutPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] TypeError: error loading dynamically imported module: http://localhost:5173/src/services/api.js?t=1779642834971
+[2m18:13:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/ProfilePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m18:52:07[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:09[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:09[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:10[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:10[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:10[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:10[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:10[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:11[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:52:11[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:28[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:29[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:29[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:29[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:29[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:29[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:30[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:30[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:30[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:30[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
+[2m18:53:30[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mAxiosError$1@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1073:3
+settle@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:1738:14
+onloadend@http://localhost:5173/node_modules/.vite/deps/axios.js?v=a014593b:2091:10
+
