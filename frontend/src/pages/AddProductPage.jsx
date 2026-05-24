@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../contexts/UserContext';
 import { createProduct, getCategories } from '../services/api';
-import './AuthPages.css'; // Reutiliza os estilos dos formulários
+import './ProfilePage.css';
 
 export default function AddProductPage() {
     const { user } = useUser();
@@ -61,49 +61,57 @@ export default function AddProductPage() {
     };
 
     return (
-        <div className="auth-container">
-            <div className="auth-card">
-                <h2>Adicionar Nova Leguminosa</h2>
-                {error && <p className="error-message" style={{ color: 'red', textAlign: 'center', marginBottom: '1rem' }}>{error}</p>}
-                <form onSubmit={handleSubmit} className="auth-form">
-                    <div className="form-group">
-                        <label>Nome</label>
-                        <input type="text" required value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
+        <div className="profile-page">
+            <h1 className="page-title">Adicionar Nova Leguminosa</h1>
+            <div className="profile-layout" style={{ gridTemplateColumns: '1fr', maxWidth: '800px', margin: '0 auto' }}>
+                <div className="profile-card">
+                    <div className="profile-card-header">
+                        <h2>Preencha os Dados</h2>
                     </div>
-
-                    <div className="form-group">
-                        <label>Descrição</label>
-                        <textarea required value={formData.description} onChange={e => setFormData({ ...formData, description: e.target.value })} />
-                    </div>
-
-                    <div className="form-row">
+                    {error && <p className="error-message" style={{ color: '#E57373', marginBottom: '1rem', padding: '0.5rem', background: 'rgba(220,80,80,.12)', borderRadius: '8px' }}>{error}</p>}
+                    <form onSubmit={handleSubmit} className="profile-form">
                         <div className="form-group">
-                            <label>Preço (€)</label>
-                            <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({ ...formData, price: e.target.value })} />
+                            <label>Nome</label>
+                            <input type="text" required value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
                         </div>
+
                         <div className="form-group">
-                            <label>Stock</label>
-                            <input type="number" required value={formData.stock} onChange={e => setFormData({ ...formData, stock: e.target.value })} />
+                            <label>Descrição</label>
+                            <textarea required value={formData.description} onChange={e => setFormData({ ...formData, description: e.target.value })} style={{ minHeight: '100px', width: '100%', padding: '0.8rem', background: 'rgba(20,30,25,.6)', border: '1px solid rgba(82,183,136,.2)', borderRadius: '8px', color: '#D8F3DC', fontFamily: 'inherit' }} />
                         </div>
-                    </div>
 
-                    <div className="form-group">
-                        <label>Categoria</label>
-                        <select required value={formData.category} onChange={e => setFormData({ ...formData, category: e.target.value })}>
-                            <option value="">Selecione uma categoria</option>
-                            {categories.map(cat => (
-                                <option key={cat.id} value={cat.id}>{cat.name}</option>
-                            ))}
-                        </select>
-                    </div>
+                        <div className="form-row">
+                            <div className="form-group">
+                                <label>Preço (€)</label>
+                                <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({ ...formData, price: e.target.value })} />
+                            </div>
+                            <div className="form-group">
+                                <label>Stock</label>
+                                <input type="number" required value={formData.stock} onChange={e => setFormData({ ...formData, stock: e.target.value })} />
+                            </div>
+                        </div>
 
-                    <div className="form-group">
-                        <label>Imagem</label>
-                        <input type="file" accept="image/png, image/jpeg" onChange={e => setImage(e.target.files[0])} />
-                    </div>
+                        <div className="form-group">
+                            <label>Categoria</label>
+                            <select required value={formData.category} onChange={e => setFormData({ ...formData, category: e.target.value })} style={{ width: '100%', padding: '0.8rem', background: 'rgba(20,30,25,.6)', border: '1px solid rgba(82,183,136,.2)', borderRadius: '8px', color: '#D8F3DC' }}>
+                                <option value="">Selecione uma categoria</option>
+                                {categories.map(cat => (
+                                    <option key={cat.id} value={cat.id}>{cat.name}</option>
+                                ))}
+                            </select>
+                        </div>
 
-                    <button type="submit" className="auth-button">Guardar Leguminosa</button>
-                </form>
+                        <div className="form-group">
+                            <label>Imagem</label>
+                            <input type="file" accept="image/png, image/jpeg" onChange={e => setImage(e.target.files[0])} style={{ width: '100%', padding: '0.8rem', background: 'rgba(20,30,25,.6)', border: '1px solid rgba(82,183,136,.2)', borderRadius: '8px', color: '#D8F3DC' }} />
+                        </div>
+
+                        <div className="profile-form-actions">
+                            <button type="submit" className="btn-primary">Guardar Leguminosa</button>
+                            <button type="button" className="btn-secondary" onClick={() => navigate('/')}>Cancelar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     );

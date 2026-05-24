@@ -21,5 +21,6 @@ export const getOrders = () => api.get('orders/');
 export const submitReview = (data) => api.post('reviews/', data);
 export const getBlogPosts = () => api.get('blog/');
 export const getBlogPost = (slug) => api.get(`blog/${slug}/`);
+export const createBlogPost = (formData) => api.post('blog/', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 export const createProduct = (formData) => api.post('products/', formData, { headers: { 'Content-Type': 'multipart/form-data', }, });
 export default api;

@@ -105,11 +105,14 @@ class OrderListView(generics.ListAPIView):
         return Order.objects.filter(user=self.request.user)
 
 
-class BlogPostListView(generics.ListAPIView):
-    """GET /api/blog/ — Listar artigos do blog."""
+class BlogPostListView(generics.ListCreateAPIView):
+    """GET /api/blog/ — Listar artigos | POST /api/blog/ — Criar artigo"""
     queryset = BlogPost.objects.all()
     serializer_class = BlogPostSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsStaffOrReadOnly]
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
 
 
 class BlogPostDetailView(generics.RetrieveAPIView):
