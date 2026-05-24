@@ -1,4 +1,4 @@
-from rest_framework import generics, status
+from rest_framework import generics, status, permissions
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -15,11 +15,17 @@ class CategoryListView(generics.ListAPIView):
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
 
+class IsStaffOrReadOnly(permissions.BasePermission):
+    """Permite leitura a todos, mas escrita (POST/PUT/DELETE) só a Staff."""
+    def has_permission(self, request, view):
+        if request.method in permissions.SAFE_METHODS:
+            return True
+        return bool(request.user and request.user.is_staff)
 
-class ProductListView(generics.ListAPIView):
-    """GET /api/products/ — Listar produtos, com filtro por categoria opcional."""
+class ProductListView(generics.ListCreateAPIView): # Mudou para ListCreateAPIView
+    """GET /api/products/ — Listar produtos | POST /api/products/ — Criar produto"""
     serializer_class = ProductListSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsStaffOrReadOnly] # Mudou de AllowAny para IsStaffOrReadOnly
 
     def get_queryset(self):
         queryset = Product.objects.all()
