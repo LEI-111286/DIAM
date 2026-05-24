@@ -2,22 +2,18 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../contexts/UserContext';
 import { createProduct } from '../services/api';
-import './AuthPages.css'; // Podes reaproveitar o CSS do Login/Register para o formulário
+import './AuthPages.css'; // Reutiliza os estilos dos formulários
 
 export default function AddProductPage() {
     const { user } = useUser();
     const navigate = useNavigate();
 
-    // Estados para os campos do formulário
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
-    const [price, setPrice] = useState('');
-    const [stock, setStock] = useState('');
-    const [category, setCategory] = useState('');
+    const [formData, setFormData] = useState({
+        name: '', description: '', price: '', stock: '', category: ''
+    });
     const [image, setImage] = useState(null);
     const [error, setError] = useState('');
 
-    // Se não for staff, nem deve ver a página (redireciona para a home)
     if (!user || !user.is_staff) {
         navigate('/');
         return null;
@@ -25,77 +21,52 @@ export default function AddProductPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError('');
-
-        // Criação do objeto FormData obrigatório para envio de ficheiros
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('description', description);
-        formData.append('price', price);
-        formData.append('stock', stock);
-        formData.append('category', category);
-
-        // Anexa a imagem apenas se o utilizador tiver selecionado uma
-        if (image) {
-            formData.append('image', image);
-        }
+        const data = new FormData();
+        Object.keys(formData).forEach(key => data.append(key, formData[key]));
+        if (image) data.append('image', image);
 
         try {
-            await createProduct(formData);
-            alert('Leguminosa adicionada com sucesso!');
-            navigate('/'); // Volta para o catálogo
+            await createProduct(data);
+            navigate('/');
         } catch (err) {
-            console.error(err);
-            setError('Erro ao criar produto. Verifica os dados.');
+            setError('Erro ao criar produto.');
         }
     };
 
     return (
         <div className="auth-container">
-            <h2>Adicionar Nova Leguminosa</h2>
-            {error && <p className="error-message">{error}</p>}
+            <div className="auth-card">
+                <h2>Adicionar Nova Leguminosa</h2>
+                <form onSubmit={handleSubmit} className="auth-form">
+                    <div className="form-group">
+                        <label>Nome</label>
+                        <input type="text" required value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
+                    </div>
 
-            <form onSubmit={handleSubmit} className="auth-form">
-                <input
-                    type="text" placeholder="Nome (ex: Feijão Frade)" required
-                    value={name} onChange={(e) => setName(e.target.value)}
-                />
+                    <div className="form-group">
+                        <label>Descrição</label>
+                        <textarea required value={formData.description} onChange={e => setFormData({ ...formData, description: e.target.value })} />
+                    </div>
 
-                <textarea
-                    placeholder="Descrição" required rows="3"
-                    value={description} onChange={(e) => setDescription(e.target.value)}
-                />
+                    <div className="form-row">
+                        <div className="form-group">
+                            <label>Preço (€)</label>
+                            <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({ ...formData, price: e.target.value })} />
+                        </div>
+                        <div className="form-group">
+                            <label>Stock</label>
+                            <input type="number" required value={formData.stock} onChange={e => setFormData({ ...formData, stock: e.target.value })} />
+                        </div>
+                    </div>
 
-                <input
-                    type="number" placeholder="Preço (€)" required step="0.01" min="0"
-                    value={price} onChange={(e) => setPrice(e.target.value)}
-                />
+                    <div className="form-group">
+                        <label>Imagem</label>
+                        <input type="file" accept="image/png, image/jpeg" onChange={e => setImage(e.target.files[0])} />
+                    </div>
 
-                <input
-                    type="number" placeholder="Stock disponível" required min="0"
-                    value={stock} onChange={(e) => setStock(e.target.value)}
-                />
-
-                <select value={category} onChange={(e) => setCategory(e.target.value)} required>
-                    <option value="" disabled>Selecione uma Categoria</option>
-                    <option value="Feijão">Feijão</option>
-                    <option value="Grão">Grão</option>
-                    <option value="Lentilhas">Lentilhas</option>
-                    <option value="Ervilhas">Ervilhas</option>
-                </select>
-
-                {/* Input para carregar a imagem PNG/JPEG */}
-                <div className="file-input-group">
-                    <label>Imagem da leguminosa:</label>
-                    <input
-                        type="file"
-                        accept="image/png, image/jpeg"
-                        onChange={(e) => setImage(e.target.files[0])}
-                    />
-                </div>
-
-                <button type="submit" className="auth-button">Adicionar ao Catálogo</button>
-            </form>
+                    <button type="submit" className="auth-button">Guardar Leguminosa</button>
+                </form>
+            </div>
         </div>
     );
 }
