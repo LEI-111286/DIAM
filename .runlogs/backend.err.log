@@ -42,3 +42,102 @@ Forbidden: /api/auth/profile/
 [24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68
 Forbidden: /api/auth/profile/
 [24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+C:\Users\hened\Documents\DIAM\Projeto\ProjetoBatata\backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:25] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:26] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:27] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:27] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:27] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:27] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/user/
+[24/May/2026 17:02:31] "GET /api/auth/user/ HTTP/1.1" 403 68
+Forbidden: /api/auth/user/
+[24/May/2026 17:02:31] "GET /api/auth/user/ HTTP/1.1" 403 68
+[24/May/2026 17:02:40] "POST /api/auth/login/ HTTP/1.1" 200 191
+[24/May/2026 17:02:41] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:02:41] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:02:41] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:02:41] "GET /api/products/ HTTP/1.1" 200 3632
+Forbidden: /api/orders/
+Forbidden: /api/orders/
+[24/May/2026 17:02:43] "GET /api/orders/ HTTP/1.1" 403 68
+[24/May/2026 17:02:43] "GET /api/orders/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:53] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:54] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:55] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 17:02:55] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+C:\Users\hened\Documents\DIAM\Projeto\ProjetoBatata\backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hened\Documents\DIAM\Projeto\ProjetoBatata\backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hened\Documents\DIAM\Projeto\ProjetoBatata\backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hened\Documents\DIAM\Projeto\ProjetoBatata\backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+[24/May/2026 17:21:36] "GET / HTTP/1.1" 404 2630
+Not Found: /favicon.ico
+[24/May/2026 17:21:36] "GET /favicon.ico HTTP/1.1" 404 2681
+[24/May/2026 17:25:23] "GET /api/categories/ HTTP/1.1" 200 915
+Forbidden: /api/auth/user/
+[24/May/2026 17:25:23] "GET /api/auth/user/ HTTP/1.1" 403 68
+Forbidden: /api/auth/user/
+[24/May/2026 17:25:23] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:25:23] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:25:23] "GET /api/auth/user/ HTTP/1.1" 403 68
+[24/May/2026 17:25:23] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:25:38] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[24/May/2026 17:25:39] "POST /api/auth/login/ HTTP/1.1" 200 191
+[24/May/2026 17:25:39] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:25:39] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:25:39] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:25:39] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:25:43] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:25:43] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:25:56] "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+[24/May/2026 17:25:56] "PUT /api/auth/profile/ HTTP/1.1" 200 191
+[24/May/2026 17:25:56] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:02] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:26:02] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:26:02] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:26:02] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:26:04] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:04] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:15] "PUT /api/auth/profile/ HTTP/1.1" 200 206
+[24/May/2026 17:26:15] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:21] "GET /api/auth/user/ HTTP/1.1" 200 206
+[24/May/2026 17:26:21] "GET /api/auth/user/ HTTP/1.1" 200 206
+[24/May/2026 17:26:21] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:21] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:21] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:22] "GET /api/auth/user/ HTTP/1.1" 200 206
+[24/May/2026 17:26:22] "GET /api/auth/user/ HTTP/1.1" 200 206
+[24/May/2026 17:26:22] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:22] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:22] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:23] "GET /api/auth/user/ HTTP/1.1" 200 206
+[24/May/2026 17:26:23] "GET /api/auth/user/ HTTP/1.1" 200 206
+[24/May/2026 17:26:23] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:23] "GET /api/orders/ HTTP/1.1" 200 2
+[24/May/2026 17:26:25] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:26:25] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 17:26:25] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:26:25] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 17:26:33] "GET /api/products/grao-de-bico-graudo/ HTTP/1.1" 200 747
+[24/May/2026 17:26:33] "GET /api/products/grao-de-bico-graudo/ HTTP/1.1" 200 747
+[24/May/2026 17:26:49] "OPTIONS /api/reviews/ HTTP/1.1" 200 0
+[24/May/2026 17:26:49] "POST /api/reviews/ HTTP/1.1" 201 110
+[24/May/2026 17:26:49] "GET /api/products/grao-de-bico-graudo/ HTTP/1.1" 200 858
+[24/May/2026 17:27:01] "GET /api/blog/ HTTP/1.1" 200 4108
+[24/May/2026 17:27:01] "GET /api/blog/ HTTP/1.1" 200 4108

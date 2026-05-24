@@ -4,6 +4,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from django.contrib.auth import authenticate, login, logout
 from .serializers import UserSerializer, RegisterSerializer
+from .models import Profile
 
 
 @api_view(['POST'])
@@ -67,7 +68,9 @@ def current_user_view(request):
 def update_profile_view(request):
     """Atualizar perfil do utilizador."""
     user = request.user
-    profile = user.profile
+    
+    # CORREÇÃO: Verifica se o perfil existe; se não existir, cria-o automaticamente
+    profile, created = Profile.objects.get_or_create(user=user)
 
     # Atualizar dados do User
     user.first_name = request.data.get('first_name', user.first_name)
