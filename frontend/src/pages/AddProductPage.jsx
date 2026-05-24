@@ -21,14 +21,26 @@ export default function AddProductPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError('');
+
         const data = new FormData();
-        Object.keys(formData).forEach(key => data.append(key, formData[key]));
-        if (image) data.append('image', image);
+        data.append('name', formData.name);
+        data.append('description', formData.description);
+        data.append('price', formData.price);
+        data.append('stock', formData.stock);
+        data.append('category', formData.category);
+
+        if (image) {
+            data.append('image', image);
+        }
 
         try {
+            // O 'await' garante que a submissão termina antes de mudarmos de página
             await createProduct(data);
+            alert('Leguminosa adicionada com sucesso!');
             navigate('/');
         } catch (err) {
+            console.error(err);
             setError('Erro ao criar produto.');
         }
     };
