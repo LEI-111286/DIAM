@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Category, Product, Order, OrderItem, Review, BlogPost
+from .models import Category, Product, Order, OrderItem, Review, BlogPost, Complaint, ComplaintMessage
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -29,6 +29,13 @@ class ProductListSerializer(serializers.ModelSerializer):
             'id', 'name', 'slug', 'description', 'price', 'stock',
             'category', 'category_name', 'image', 'origin', 'average_rating',
         ]
+
+    def validate_name(self, value):
+        from django.utils.text import slugify
+        slug = slugify(value)
+        if Product.objects.filter(slug=slug).exists():
+            raise serializers.ValidationError("Já existe uma leguminosa com este nome.")
+        return value
 
 
 class ProductDetailSerializer(serializers.ModelSerializer):
@@ -89,7 +96,7 @@ class CreateOrderSerializer(serializers.Serializer):
                 )
             if int(item['quantity']) > product.stock:
                 raise serializers.ValidationError(
-                    f"Stock insuficiente para {product.name}."
+                    f"Stock insuficiente para {product.name}, {product.stock} disponivel."
                 )
         return items
 
@@ -121,3 +128,26 @@ class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = BlogPost
         fields = ['id', 'title', 'slug', 'content', 'excerpt', 'image', 'author_name', 'created_at']
+
+
+class ComplaintMessageSerializer(serializers.ModelSerializer):
+    sender_name = serializers.CharField(source='sender.username', read_only=True)
+    is_staff = serializers.BooleanField(source='sender.is_staff', read_only=True)
+
+    class Meta:
+        model = ComplaintMessage
+        fields = ['id', 'sender_name', 'is_staff', 'message', 'created_at']
+
+
+class ComplaintSerializer(serializers.ModelSerializer):
+    user_name = serializers.CharField(source='user.username', read_only=True)
+    product_name = serializers.CharField(source='product.name', read_only=True, allow_null=True)
+    messages = ComplaintMessageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Complaint
+        fields = [
+            'id', 'user_name', 'product', 'product_name', 'subject',
+            'status', 'created_at', 'updated_at', 'messages'
+        ]
+        read_only_fields = ['id', 'user_name', 'product_name', 'created_at', 'updated_at', 'messages']

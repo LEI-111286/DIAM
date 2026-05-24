@@ -85,5 +85,8 @@ def update_profile_view(request):
     profile.postal_code = request.data.get('postal_code', profile.postal_code)
     profile.save()
 
+    # Refresh the user to clear cached related objects (like profile)
+    user.refresh_from_db()
+
     serializer = UserSerializer(user)
     return Response(serializer.data)

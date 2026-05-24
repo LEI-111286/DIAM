@@ -2,10 +2,11 @@ from rest_framework import generics, status, permissions
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
-from .models import Category, Product, Order, Review, BlogPost
+from .models import Category, Product, Order, Review, BlogPost, Complaint, ComplaintMessage
 from .serializers import (
     CategorySerializer, ProductListSerializer, ProductDetailSerializer,
     OrderSerializer, CreateOrderSerializer, ReviewSerializer, BlogPostSerializer,
+    ComplaintSerializer, ComplaintMessageSerializer
 )
 
 
@@ -121,3 +122,62 @@ class BlogPostDetailView(generics.RetrieveAPIView):
     serializer_class = BlogPostSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
+
+
+class ComplaintListView(generics.ListCreateAPIView):
+    """GET /api/complaints/ — Listar reclamações | POST /api/complaints/ — Criar reclamação"""
+    serializer_class = ComplaintSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_staff:
+            return Complaint.objects.all()
+        return Complaint.objects.filter(user=user)
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+
+class ComplaintDetailView(generics.RetrieveUpdateAPIView):
+    """GET /api/complaints/<id>/ — Detalhe da reclamação | PUT/PATCH — Atualizar status (staff)"""
+    serializer_class = ComplaintSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_staff:
+            return Complaint.objects.all()
+        return Complaint.objects.filter(user=user)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def add_complaint_message(request, pk):
+    """POST /api/complaints/<id>/messages/ — Adicionar mensagem à reclamação."""
+    try:
+        user = request.user
+        if user.is_staff:
+            complaint = Complaint.objects.get(id=pk)
+        else:
+            complaint = Complaint.objects.get(id=pk, user=user)
+    except Complaint.DoesNotExist:
+        return Response({'error': 'Reclamação não encontrada.'}, status=status.HTTP_404_NOT_FOUND)
+
+    message_text = request.data.get('message')
+    if not message_text:
+        return Response({'error': 'A mensagem é obrigatória.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    msg = ComplaintMessage.objects.create(
+        complaint=complaint,
+        sender=user,
+        message=message_text
+    )
+    
+    # Se o staff responder a uma reclamação aberta, muda para em curso
+    if user.is_staff and complaint.status == 'aberta':
+        complaint.status = 'em_curso'
+        complaint.save()
+
+    serializer = ComplaintMessageSerializer(msg)
+    return Response(serializer.data, status=status.HTTP_201_CREATED)

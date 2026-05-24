@@ -13,7 +13,13 @@ class Category(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.name)
+            base_slug = slugify(self.name)
+            slug = base_slug
+            counter = 1
+            while Category.objects.filter(slug=slug).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -146,7 +152,13 @@ class BlogPost(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.title)
+            base_slug = slugify(self.title)
+            slug = base_slug
+            counter = 1
+            while BlogPost.objects.filter(slug=slug).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -156,3 +168,44 @@ class BlogPost(models.Model):
         verbose_name = 'Artigo do Blog'
         verbose_name_plural = 'Artigos do Blog'
         ordering = ['-created_at']
+
+
+class Complaint(models.Model):
+    """Reclamação de um cliente, opcionalmente associada a um produto."""
+    STATUS_CHOICES = [
+        ('aberta', 'Aberta'),
+        ('em_curso', 'Em Curso'),
+        ('resolvida', 'Resolvida'),
+    ]
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='complaints')
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, blank=True, related_name='complaints')
+    subject = models.CharField(max_length=200)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='aberta')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f'Reclamação #{self.id} - {self.subject} ({self.get_status_display()})'
+
+    class Meta:
+        verbose_name = 'Reclamação'
+        verbose_name_plural = 'Reclamações'
+        ordering = ['-created_at']
+
+
+class ComplaintMessage(models.Model):
+    """Mensagem de chat numa reclamação."""
+    complaint = models.ForeignKey(Complaint, on_delete=models.CASCADE, related_name='messages')
+    sender = models.ForeignKey(User, on_delete=models.CASCADE)
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'Mensagem de {self.sender.username} em {self.complaint}'
+
+    class Meta:
+        verbose_name = 'Mensagem de Reclamação'
+        verbose_name_plural = 'Mensagens de Reclamação'
+        ordering = ['created_at']
+

@@ -10,4 +10,7 @@ urlpatterns = [
     path('orders/create/', views.create_order, name='create-order'),
     path('blog/', views.BlogPostListView.as_view(), name='blog-list'),
     path('blog/<slug:slug>/', views.BlogPostDetailView.as_view(), name='blog-detail'),
+    path('complaints/', views.ComplaintListView.as_view(), name='complaint-list'),
+    path('complaints/<int:pk>/', views.ComplaintDetailView.as_view(), name='complaint-detail'),
+    path('complaints/<int:pk>/messages/', views.add_complaint_message, name='complaint-add-message'),
 ]
