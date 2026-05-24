@@ -1,0 +1,18 @@
+.home-page{min-height:100vh}
+.hero{padding:4rem 1.5rem 3rem;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.hero-content{max-width:600px}.hero-title{font-size:2.8rem;font-weight:800;color:#D8F3DC;line-height:1.15;margin-bottom:1rem}
+.hero-highlight{background:linear-gradient(135deg,#52B788,#40916C);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-subtitle{color:#6B8F7B;font-size:1.1rem;line-height:1.65;margin-bottom:1.75rem}
+.hero-search{position:relative;max-width:420px}
+.search-input{width:100%;padding:.85rem 1.25rem;background:rgba(20,30,25,.8);border:1px solid rgba(82,183,136,.2);border-radius:12px;color:#D8F3DC;font-size:.95rem;outline:none;transition:all .3s}
+.search-input::placeholder{color:#4A6B58}.search-input:focus{border-color:#52B788;box-shadow:0 0 0 3px rgba(82,183,136,.15)}
+.hero-decoration{font-size:8rem;opacity:.15;animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+.categories-section{max-width:1200px;margin:0 auto;padding:0 1.5rem 2rem}
+.categories-list{display:flex;gap:.5rem;flex-wrap:wrap}
+.category-btn{padding:.5rem 1.15rem;background:rgba(20,30,25,.6);border:1px solid rgba(82,183,136,.15);border-radius:20px;color:#B7E4C7;font-size:.82rem;font-weight:500;cursor:pointer;transition:all .25s}
+.category-btn:hover{border-color:rgba(82,183,136,.35);background:rgba(82,183,136,.08)}
+.category-btn.active{background:linear-gradient(135deg,#2D6A4F,#40916C);border-color:transparent;color:#D8F3DC}
+.products-section{max-width:1200px;margin:0 auto;padding:0 1.5rem 3rem}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.5rem}
+@media(max-width:768px){.hero{flex-direction:column;text-align:center;padding:2.5rem 1.5rem 2rem}.hero-title{font-size:2rem}.hero-search{max-width:100%}.hero-decoration{display:none}.products-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}

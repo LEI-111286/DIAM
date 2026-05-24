@@ -1,0 +1,11 @@
+.footer{background:#0A0F0D;border-top:1px solid rgba(82,183,136,.12);padding:3rem 1.5rem 1rem;margin-top:auto}
+.footer-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem}
+.footer-title{font-size:1.15rem;font-weight:700;color:#95D5B2;margin-bottom:.75rem;display:flex;align-items:center;gap:.4rem}
+.footer-desc{color:#6B8F7B;font-size:.85rem;line-height:1.6}
+.footer-subtitle{font-size:.85rem;font-weight:600;color:#B7E4C7;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+.footer-links{list-style:none;padding:0;margin:0}.footer-links li{margin-bottom:.4rem;color:#6B8F7B;font-size:.85rem}
+.footer-links a{color:#6B8F7B;text-decoration:none;transition:color .2s}.footer-links a:hover{color:#95D5B2}
+.footer-bottom{max-width:1200px;margin:2rem auto 0;padding-top:1rem;border-top:1px solid rgba(82,183,136,.1);text-align:center}
+.footer-bottom p{color:#4A6B58;font-size:.8rem}
+@media(max-width:768px){.footer-container{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.footer-container{grid-template-columns:1fr}}

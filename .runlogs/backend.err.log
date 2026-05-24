@@ -1,0 +1,44 @@
+Watching for file changes with StatReloader
+[24/May/2026 16:28:32] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 16:28:32,825] - Broken pipe from ('127.0.0.1', 53688)
+[24/May/2026 16:31:04] "GET /api/categories/ HTTP/1.1" 200 915
+Forbidden: /api/auth/user/
+[24/May/2026 16:31:04] "GET /api/auth/user/ HTTP/1.1" 403 68
+Forbidden: /api/auth/user/
+[24/May/2026 16:31:04] "GET /api/auth/user/ HTTP/1.1" 403 68
+[24/May/2026 16:31:04] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 16:31:04] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 16:31:04] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 16:31:12] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[24/May/2026 16:31:13] "POST /api/auth/login/ HTTP/1.1" 200 191
+[24/May/2026 16:31:13] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 16:31:13] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 16:31:13] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 16:31:13] "GET /api/products/ HTTP/1.1" 200 3632
+Forbidden: /api/orders/
+Forbidden: /api/orders/
+[24/May/2026 16:31:25] "GET /api/orders/ HTTP/1.1" 403 68
+[24/May/2026 16:31:25] "GET /api/orders/ HTTP/1.1" 403 68
+[24/May/2026 16:31:31] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 16:31:31] "GET /api/categories/ HTTP/1.1" 200 915
+[24/May/2026 16:31:31] "GET /api/products/ HTTP/1.1" 200 3632
+[24/May/2026 16:31:31] "GET /api/products/ HTTP/1.1" 200 3632
+Forbidden: /api/orders/
+[24/May/2026 16:31:33] "GET /api/orders/ HTTP/1.1" 403 68
+Forbidden: /api/orders/
+[24/May/2026 16:31:33] "GET /api/orders/ HTTP/1.1" 403 68
+[24/May/2026 16:31:42] "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:42] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:45] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68
+Forbidden: /api/auth/profile/
+[24/May/2026 16:31:46] "PUT /api/auth/profile/ HTTP/1.1" 403 68

@@ -1,0 +1,56 @@
+.profile-page{max-width:1200px;margin:0 auto;padding:2rem 1.5rem}
+.profile-layout{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+.profile-card,.orders-card{background:rgba(20,30,25,.5);border:1px solid rgba(82,183,136,.12);border-radius:16px;padding:1.5rem}
+.profile-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem}
+.profile-card-header h2,.orders-card h2{font-size:1.15rem;font-weight:600;color:#D8F3DC;display:flex;align-items:center;gap:.4rem}
+.edit-btn{display:flex;align-items:center;gap:.3rem;background:0 0;border:1px solid rgba(82,183,136,.2);color:#52B788;padding:.35rem .75rem;border-radius:8px;font-size:.78rem;cursor:pointer;transition:all .2s}.edit-btn:hover{background:rgba(82,183,136,.1)}
+.profile-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.info-item{display:flex;flex-direction:column;gap:.2rem}.info-label{font-size:.72rem;font-weight:600;color:#52B788;text-transform:uppercase;letter-spacing:.04em}.info-value{color:#B7E4C7;font-size:.9rem}
+.profile-form-actions{display:flex;gap:.75rem;margin-top:.5rem}
+.orders-card h2{margin-bottom:1rem}.no-orders{color:#6B8F7B;font-style:italic;font-size:.9rem}
+.order-card{background:rgba(15,23,20,.5);border:1px solid rgba(82,183,136,.08);border-radius:12px;padding:1rem;margin-bottom:.75rem}
+.order-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem}
+.order-id{font-weight:600;color:#D8F3DC;font-size:.9rem}
+.order-status{font-size:.72rem;font-weight:600;padding:.2rem .55rem;border-radius:6px}
+.status-pending{background:rgba(255,193,7,.12);color:#FFC107}.status-processing{background:rgba(33,150,243,.12);color:#42A5F5}
+.status-shipped{background:rgba(82,183,136,.12);color:#52B788}.status-delivered{background:rgba(76,175,80,.12);color:#66BB6A}
+.status-cancelled{background:rgba(220,80,80,.12);color:#E57373}
+.order-item-row{display:flex;justify-content:space-between;font-size:.82rem;color:#B7E4C7;padding:.15rem 0}
+.order-footer{display:flex;justify-content:space-between;margin-top:.5rem;padding-top:.5rem;border-top:1px solid rgba(82,183,136,.08)}
+.order-date{color:#6B8F7B;font-size:.75rem}.order-total{font-weight:700;color:#95D5B2;font-size:.9rem}
+
+/* Profile Incomplete Banner */
+.profile-incomplete-banner{
+  display:flex;align-items:center;gap:.5rem;
+  padding:.75rem 1.15rem;margin-bottom:1.5rem;
+  background:rgba(255,193,7,.08);
+  border:1px solid rgba(255,193,7,.25);
+  border-radius:12px;color:#FFC107;
+  font-size:.88rem;font-weight:500;
+  animation:bannerSlideIn .4s ease-out;
+}
+.profile-incomplete-banner svg{font-size:1.15rem;flex-shrink:0}
+
+@keyframes bannerSlideIn{
+  from{opacity:0;transform:translateY(-10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Missing Field Highlight */
+.form-group.field-missing input{
+  border-color:rgba(255,193,7,.5) !important;
+  background:rgba(255,193,7,.05);
+  box-shadow:0 0 0 3px rgba(255,193,7,.1);
+}
+.form-group.field-missing label{color:#FFC107}
+
+.field-required-tag{
+  display:inline-flex;align-items:center;gap:.25rem;
+  margin-left:.5rem;font-size:.68rem;font-weight:600;
+  color:#FFC107;background:rgba(255,193,7,.1);
+  padding:.1rem .4rem;border-radius:4px;
+  vertical-align:middle;
+}
+.field-required-tag svg{font-size:.7rem}
+
+@media(max-width:768px){.profile-layout{grid-template-columns:1fr}.profile-info-grid{grid-template-columns:1fr}}

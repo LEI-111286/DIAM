@@ -1,0 +1,9 @@
+.checkout-page{max-width:1200px;margin:0 auto;padding:2rem 1.5rem}
+.checkout-layout{display:grid;grid-template-columns:1fr 380px;gap:2rem;align-items:start}
+.checkout-form{background:rgba(20,30,25,.5);border:1px solid rgba(82,183,136,.12);border-radius:16px;padding:2rem}
+.checkout-form h2,.checkout-summary h2{color:#D8F3DC;font-size:1.15rem;margin-bottom:1.25rem}
+.submit-order-btn{width:100%;margin-top:.5rem;background:linear-gradient(135deg,#2D6A4F,#40916C);color:#D8F3DC;border:none;padding:.8rem;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;transition:all .25s}.submit-order-btn:hover:not(:disabled){background:linear-gradient(135deg,#40916C,#52B788)}.submit-order-btn:disabled{opacity:.5;cursor:not-allowed}
+.checkout-summary{background:rgba(20,30,25,.6);border:1px solid rgba(82,183,136,.12);border-radius:16px;padding:1.5rem;position:sticky;top:80px}
+.checkout-item{display:flex;justify-content:space-between;margin-bottom:.5rem;font-size:.88rem;color:#B7E4C7}
+.checkout-total{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:700;color:#D8F3DC;margin-top:.5rem}
+@media(max-width:768px){.checkout-layout{grid-template-columns:1fr}}
